@@ -1,0 +1,6 @@
+Person.firstName;Person.lastName;Person.documentType;Person.documentNumber;Person.age;result
+Bart;Simpson;DNI;111;11;false
+Liza;Simpson;DNI;222;8;false
+Maguie;Simpson;DNI;333;;ValidationException
+March;Simpson;DNI;444;34;true
+Homer;Simpson;DNI;555;36;true
