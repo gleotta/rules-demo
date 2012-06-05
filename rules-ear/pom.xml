@@ -17,8 +17,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.cuyum.rules</groupId>
-			<artifactId>demo-ejb</artifactId>
+			<groupId>com.cuyum.rules.demo</groupId>
+			<artifactId>rules-ejb</artifactId>
 			<version>0.1</version>
 			<type>ejb</type>
 		</dependency>
