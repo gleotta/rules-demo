@@ -79,9 +79,6 @@
 				<version>2.4.3</version>
 				<configuration>
 					<skip>false</skip>
-					<systemProperties>
-						<rules.demo.docbase>.</rules.demo.docbase>
-					</systemProperties>
 				</configuration>
 			</plugin>
 
