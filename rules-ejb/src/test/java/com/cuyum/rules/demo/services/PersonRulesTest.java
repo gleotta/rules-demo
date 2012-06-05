@@ -34,7 +34,7 @@ public class PersonRulesTest {
 	@Parameters
 	public static Collection<Object[]> data() {
 		try {
-			String docBase = System.getProperty("rules.demo.docbase");
+			String docBase = System.getProperty("rules.demo.docbase",".");
 			File file = new File(docBase,"isAdult.csv");
 			log.info("Inicializando test con datos de "+file.getCanonicalPath());
 			FileReader fr = new FileReader(file);
