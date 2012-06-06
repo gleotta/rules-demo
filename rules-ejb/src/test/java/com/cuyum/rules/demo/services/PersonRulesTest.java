@@ -39,7 +39,7 @@ public class PersonRulesTest {
 
 	
 	/**
-	 * Obteiene los datos de parametros de entrada y resultado esperado
+	 * Obtiene los datos de parametros de entrada y resultado esperado
 	 * de un archivo llamado isAdult.csv
 	 * El directorio desde donde se toma el archivo se define por la 
 	 * variable de sistema "rules.demo.docbase"
