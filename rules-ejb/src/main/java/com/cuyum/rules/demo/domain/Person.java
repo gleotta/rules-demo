@@ -6,6 +6,13 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.log4j.Logger;
 
 @SuppressWarnings("serial")
+/**
+ * Modelo de Dominio
+ * Representa los datos de una persona
+ * 
+ * @author german
+ *
+ */
 public class Person implements Serializable {
 
 	private String documentNumber;

@@ -26,11 +26,26 @@ import com.cuyum.rules.demo.domain.Person;
 import com.cuyum.rules.demo.exceptions.ValidationException;
 import com.cuyum.rules.demo.services.impl.PersonRulesImpl;
 
+/**
+ * Test Unitario de {@link PersonRules} 
+ * 
+ * @author german
+ *
+ */
 @RunWith(Parameterized.class)
 public class PersonRulesTest {
 	
 	private static Logger log = Logger.getLogger(PersonRulesTest.class);
 
+	
+	/**
+	 * Obteiene los datos de parametros de entrada y resultado esperado
+	 * de un archivo llamado isAdult.csv
+	 * El directorio desde donde se toma el archivo se define por la 
+	 * variable de sistema "rules.demo.docbase"
+	 * 
+	 * @return
+	 */
 	@Parameters
 	public static Collection<Object[]> data() {
 		try {
@@ -101,6 +116,9 @@ public class PersonRulesTest {
 		personRules = new PersonRulesImpl();
 	}
 
+	/**
+	 * Prueba unitaria sobre el metodo {@link PersonRules#isAdult(Person)}
+	 */
 	@Test
 	public final void testIsAdult() {
 		log.info("Persona: "+person);
@@ -126,33 +144,4 @@ public class PersonRulesTest {
 		}
 
 	}
-	
-	public static void main(String[] args) {
-		
-		FileReader fr = null;
-		try {
-			fr = new FileReader(new File("isAdult.csv"));
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-			throw new RuntimeException("No se puede comenzar test", e);
-		}
-		CSVReader reader = new CSVReader(fr, ';', '\'', 1);
-		try {
-			List<String[]> rows = reader.readAll();
-			for (String[] row : rows) {
-				for (int i = 0; i < row.length; i++) {
-					System.out.print(row[i]+"\t");
-				}
-				System.out.println();
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-	}
-
 }

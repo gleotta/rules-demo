@@ -5,6 +5,13 @@ import javax.ejb.Local;
 import com.cuyum.rules.demo.domain.Person;
 import com.cuyum.rules.demo.exceptions.ValidationException;
 
+
+/**
+ * Interface de servicio para reglas relacionadas con {@link Person}
+ * 
+ * @author german
+ *
+ */
 @Local
 public interface PersonRules {
 

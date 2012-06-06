@@ -6,6 +6,11 @@ import com.cuyum.rules.demo.domain.Person;
 import com.cuyum.rules.demo.exceptions.ValidationException;
 import com.cuyum.rules.demo.services.PersonRules;
 
+/**
+ * Implementacion default de {@link PersonRulesImpl}
+ * @author german
+ *
+ */
 @Stateless
 public class PersonRulesImpl implements PersonRules {
 	
