@@ -28,6 +28,7 @@ $>mvn test
 
 Lo que nos arroja los resultados por consola ademas de dejarnos un detalle 
 de la ejecución de las pruebas como reporte
+
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
